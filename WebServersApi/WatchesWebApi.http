@@ -1,0 +1,6 @@
+@WatchesWebApi_HostAddress = http://localhost:5027
+
+GET {{WatchesWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
