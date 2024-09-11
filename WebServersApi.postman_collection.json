@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "1517166d-8cab-49ce-ba5c-b20e98c30fc0",
+		"name": "WebServersApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21537437"
+	},
+	"item": [
+		{
+			"name": "Get / read webserver with last 10 history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7147/api/WebServersManage/GetInfo10?serverID=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7147",
+					"path": [
+						"api",
+						"WebServersManage",
+						"GetInfo10"
+					],
+					"query": [
+						{
+							"key": "serverID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put / edit webserver",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7147/api/WebServersManage?id=7&name=server45&httpURL=http://localhost:80/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7147",
+					"path": [
+						"api",
+						"WebServersManage"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						},
+						{
+							"key": "name",
+							"value": "server45"
+						},
+						{
+							"key": "httpURL",
+							"value": "http://localhost:80/"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete / delete webserver Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7147/api/WebServersManage?id=7&name=server44&httpURL=https://localhost:7147/server44",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7147",
+					"path": [
+						"api",
+						"WebServersManage"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						},
+						{
+							"key": "name",
+							"value": "server44"
+						},
+						{
+							"key": "httpURL",
+							"value": "https://localhost:7147/server44"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post / create webserver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7147/api/WebServersManage?name=server9&httpURL=http://localhost:80/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7147",
+					"path": [
+						"api",
+						"WebServersManage"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "server9"
+						},
+						{
+							"key": "httpURL",
+							"value": "http://localhost:80/"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get / Get all web servers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7147/api/WebServersManage/GetAll"
+			},
+			"response": []
+		},
+		{
+			"name": "Get / Get list of a specific webserver requests history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7147/api/WebServersManage/GetHistory?serverID=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7147",
+					"path": [
+						"api",
+						"WebServersManage",
+						"GetHistory"
+					],
+					"query": [
+						{
+							"key": "serverID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
